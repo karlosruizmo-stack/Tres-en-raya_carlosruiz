@@ -10,3 +10,23 @@ public class TresEnRalla {
         inicializarTablero();
 
         boolean juegoTerminado = false;
+
+        public static void main(String[] args ){
+        initializeBoard();
+        while (true) {
+            printBoard();
+            playerMove();
+            if (isWinner()) {
+                printBoard();
+                System.out.println("Jugador " + currentPlayer + "ha ganado");
+                break;
+            }
+            if (isBoardFull()) {
+                printBoard();
+                Systen.out.println("Empate");
+                break;
+                
+            }
+        }
+    }
+
