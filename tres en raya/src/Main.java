@@ -11,7 +11,7 @@ public class TresEnRalla {
 
         boolean juegoTerminado = false;
 
-        public static void main(String[] args ){
+        public static void main(String[] args ){//Aqui he hecho el apartado de los possibles resultados de las partidas
         initializeBoard();
         while (true) {
             printBoard();
@@ -21,11 +21,24 @@ public class TresEnRalla {
                 System.out.println("Jugador " + currentPlayer + "ha ganado");
                 break;
             }
-            if (isBoardFull()) {
+            if (isBoardFull()) {//Representacio visual del tablero
                 printBoard();
-                Systen.out.println("Empate");
+                System.out.println("Empate");
                 break;
-                
+                private static void printBoard() {
+                    System.out.println("-------------");
+                    for (int i = 0; i < 3; i++) {
+                        System.out.print("|");
+                        for (int j = 0; j < 3; j++) {
+                            System.out.print(tablero[i][j]);
+                        }
+                    }
+                    System.out.println();
+                    System.out.println("-------------");
+                }
+                }
+                }
+
             }
         }
     }
