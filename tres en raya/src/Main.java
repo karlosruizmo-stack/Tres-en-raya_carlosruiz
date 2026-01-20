@@ -21,7 +21,7 @@ public class TresEnRalla {
                 System.out.println("Jugador " + currentPlayer + "ha ganado");
                 break;
             }
-            if (is BoardFull()) {//Representacio visual del tablero
+            if (if BoardFull()) {//Representacio visual del tablero
                 printBoard();
                 System.out.println("Empate");
                 break;
@@ -37,12 +37,14 @@ public class TresEnRalla {
                     System.out.println("-------------");
                 }
                 }
-            private static void playerMove(){
+            void playerMove() double[][] board;
+            {
                 Scanner in = new Scanner(System.in);
                 int row, col;
 
                 while(true){
                     System.out.println("Jugador 1 esta eligiendo" + currentPlayer);
+                    Scanner scanner;
                     row = scanner.nextInt();
                     col = scanner.nextInt();
 
